@@ -1,4 +1,8 @@
 @media screen and (min-width: 24em) {
+    header {
+        height: 6.0rem;
+    }
+    
     main h1 {
         margin-top: 4.0rem;
         line-height: 4.0rem;
@@ -15,6 +19,15 @@
 }
 
 @media screen and (min-width: 40em) {
+
+    header {
+        height: 7.0rem;
+    }
+
+    header ul {
+        gap: 5.0rem;
+    }
+
     main h1 {
         margin-top: 4.5rem;
         text-transform: uppercase;
