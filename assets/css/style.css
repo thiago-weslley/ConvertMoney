@@ -38,7 +38,7 @@ body {
 .container-box {
     margin: auto;
     width: 95vw;
-    height: 90vh;
+    height: 60.0rem;
     border: 5px solid rgba(0, 0, 0, 0.9);
     border-radius: 25px;
     background-color: #F9B558;
