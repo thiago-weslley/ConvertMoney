@@ -22,9 +22,7 @@ const convertValues = () => {
     }
 }
 
+const changeSelectConvertFor = () => {convertValues()}
+
+selectConvertFor.addEventListener('change', changeSelectConvertFor)
 convertButton.addEventListener('click', convertValues);
-
-// const selectConvertFor = document.querySelector('#convert-for');
-
-
-// selectConvertFor.addEventListener('change', () => console.log(selectConvertFor.value))
