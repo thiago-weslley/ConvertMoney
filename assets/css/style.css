@@ -57,12 +57,6 @@ header {
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
 }
 
-header p {
-    display: none;
-    font-size: 2.0rem;
-    font-weight: 400;
-}
-
 header ul {
     display: flex;
     gap: 2.0rem;
@@ -80,6 +74,7 @@ header ul li ion-icon {
 
 /* MAIN STYLES */
 main {
+    position: relative;
     padding: 0 1.0rem;
 }
 
@@ -89,7 +84,7 @@ main h1 {
     font-weight: 700;
     margin-top: 2.5rem;
     text-transform: uppercase;
-    font-size: 3.8rem;
+    font-size: 4.0rem;
     color: #06995A;
     filter: drop-shadow(4px 0 2px rgba(0, 0, 0, .7));
 }
@@ -162,4 +157,9 @@ main .convert-button button {
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+}
+
+main .convert-button button:hover {
+    background-color: #c26793;
+    transition: .3s;
 }
