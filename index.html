@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,24 +36,25 @@
                         </select>
                     </label>
 
-                    <input id="input-real" placeholder="R$ 10.000,00" type="number">
+                    <input id="conversion-value" placeholder="R$ 10.000,00" type="number">
                 </div>
 
                 <div class="convert-for">
                     <label>
                         Para:
-                        <select>
-                            <option selected>$ Dólar Americano</option>
-                            <option>€ Euro</option>
-                            <option>₿ Bitcoin</option>
+                        <select id="convert-for">
+                            <option value="dolar" selected>$ Dólar Americano</option>
+                            <option value="euro">€ Euro</option>
+                            <option value="bitcoin">₿ Bitcoin</option>
                         </select>
                     </label>
 
-                    <input id="conversion-result" type="number" readonly>
+                    <input id="conversion-result" type="text" readonly>
                 </div>
 
                 <div class="convert-button">
-                    <button>Converter</button>
+                    <button id="convert-button">Converter</button>
+                    <button>Limpar</button>
                 </div>
             </section>
         </main>
@@ -61,6 +62,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

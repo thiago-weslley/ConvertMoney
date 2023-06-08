@@ -25,7 +25,7 @@ body::after {
     content: '';
     z-index: -1;
     position: fixed;
-    background-image: url('../img/circle.png');
+    background-image: url('../img/circle2.png');
     background-repeat: no-repeat;
     right: -150px;
     bottom: -150px;
@@ -106,7 +106,7 @@ main h1 {
 }
 
 main .input-container {
-    margin-top: 4.2rem;
+    margin-top: 2.2rem;
 }
 
 main .convert-from,
@@ -135,6 +135,12 @@ select {
     box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
+select {
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.47945 11.4673C8.13023 11.4673 7.8309 11.3176 7.63135 11.0682L2.69243 5.53062C2.3931 5.13152 2.44299 4.53286 2.84209 4.23353C3.24119 3.9342 3.78996 3.9342 4.08929 4.33331L8.37967 9.22234C8.42956 9.27223 8.47945 9.27223 8.57922 9.22234L12.8696 4.33331C13.2188 3.9342 13.7676 3.88432 14.1667 4.23353C14.5658 4.58275 14.6157 5.13152 14.2665 5.53062C14.2665 5.53062 14.2665 5.53062 14.2166 5.58051L9.32754 11.1181C9.12799 11.3176 8.77877 11.4673 8.47945 11.4673Z' fill='%235E616B'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+}
+
 input {
     border-radius: 0 0 4px 4px;
 }
@@ -146,17 +152,19 @@ select {
 select,
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
     -webkit-appearance: none;
 }
 
 main .convert-button {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .convert-button button {
-    margin-top: 2.5rem;
-    width: 14.2rem;
+    margin-top: 1.0rem;
+    width: 24.0rem;
     height: 4.5rem;
     border-radius: 20px;
     border: 2px solid rgba(0, 0, 0, 0.9);
