@@ -20,6 +20,19 @@ const convertValues = () => {
             currency: 'EUR'
         }).format(inputConversionValue / euroToday);
     }
+
+    if (selectConvertFor.value === 'libra'){
+        const libraToday = 6.18;
+        inputConversionResult.value = new Intl.NumberFormat('en-GB', {
+            style: 'currency',
+            currency: 'GBP'
+        }).format(inputConversionValue / libraToday);
+    }
+
+    if (selectConvertFor.value === 'bitcoin'){
+        const bitcoinToday = 130028.61;
+        inputConversionResult.value = (inputConversionValue / bitcoinToday).toFixed(8) + " BTC";
+    }
 }
 
 const changeSelectConvertFor = () => {convertValues()}
